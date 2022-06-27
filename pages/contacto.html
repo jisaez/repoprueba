@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto</title>
+	<link rel="shortcut icon" href="../img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+	<div class="backColor--white">
+		<nav class="nav__page">
+			<a href="../index.html"> 
+				<img src="../img/logoblanco.png" alt="logo de Cuartito Azul">
+			</a>
+
+			<ul>
+				<li> <a href="catering.html">Catering</a> </li>
+				<li> <a href="menu.html">Menu</a> </li>
+				<li> <a href="sobre-nosotros.html">Nosotros</a> </li>
+				<li> <a href="contacto.html">Contacto</a> </li>
+			</ul>
+		</nav>
+		
+		<form action="contacto_web.php">
+			<fieldset>
+				<legend>Info personal</legend>	
+					<label for="name">Nombre</label>
+					<input type="text" id="name" placeholder="Tu nombre y apellido">
+					<br> <br>
+					<label for="email">e-mail</label>
+					<input type="text" id="email" placeholder="tu@mail.com">
+					<br><br>
+					<label for="phone">Movil</label>
+					<input type="text" id="phone" placeholder="+52 12345678">
+				
+				<br><br>
+
+				<legend>Vives en</legend>
+					<label for="ElPaso">El Paso</label>
+					<input type="radio" id="ElPaso" name="domicilio" value="El Paso">
+					<label for="CdJrz">Ciudad Juarez</label>
+					<input type="radio" id="CdJrz" name="domicilio" value="Ciudad Juarez">
+					<label for="Otro">Otro</label>
+					<input type="radio" id="Otro" name="domicilio" value="Otro">
+				
+				<br><br>	
+
+				<legend>Probaste la comida de Cuartito Azul?</legend>
+					<label for="local">He consunido en el local</label>
+					<input type="checkbox" id="local" value="He consumido en el local"> 
+					<br>
+					<label for="retiro">He pedido para retirar</label>
+					<input type="checkbox" id="retiro" value="He pedido para retirar"> 
+					<br>
+					<label for="aun no">Aun no conozco</label>
+					<input type="checkbox" id="aun no" value="Aun no">
+			</fieldset>
+
+			<fieldset>
+				<legend>Sobre tu mensaje</legend>
+					<label>Motivo</label>
+					<select>
+					<option value="catering">Catering</option>
+					<option value="eventos">Eventos</option>
+					<option value="otro">Otro</option>
+					</select> <br>
+					<label for="mensaje">Tu mensaje</label> <br>
+					<input class="input__texto" type="text" name="mensaje">
+			</fieldset>
+			
+			<input class="boton input__boton" type="reset" value="Cancelar">
+			<input class="boton input__boton" type="submit" value="Enviar">
+		</form>
+	</div>
+	
+	<footer class="footer__page">
+		<a class="footerlogo" href="index.html">
+			<img  src="../img/isologo.png" alt="isologo Cuartito Azul">
+		</a>
+	</footer>
+
+</body>
+</html>
