@@ -558,6 +558,38 @@ legend{
 }
 
 
+/* ========= ANIMACIONES ============= */
+
+@media (hover:hover){
+ul li a:hover{
+	background-color: white;
+	color: #085492;
+	text-decoration: underline;
+	cursor: pointer;
+	padding: 5px 15px;
+}
+
+.boton:hover{
+	transform: scale(1.15,1.15);
+}
+
+.lowcontact__contenido:hover{
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nosotros__img:hover{
+	border: 10px solid #ffc152;
+}
+
+}
+
+input:focus{
+	border: solid #b22420 3px;
+}
+
+
 /* ============== mobile 320/762px ============= */
 
 
@@ -799,7 +831,9 @@ fieldset {
     width: 100%;
 }
 
-
-
-
 }
+
+
+
+
+
